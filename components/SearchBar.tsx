@@ -75,7 +75,7 @@ updateSearchParams(model.toLowerCase(), manufacturer.toLowerCase());
           placeholder='Tiguan'
           className='searchbar__input' 
           value={model} 
-      onChange={(e)=>setModel(e.target.value)}
+          onChange={(e)=>setModel(e.target.value)}
         />
         <SearchButton
           otherClasses='sm:hidden'
