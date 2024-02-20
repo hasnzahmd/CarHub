@@ -2,7 +2,7 @@
 import { CustomButtonProps } from '@/types';
 import Image from 'next/image';
 
-const CustomButton = (props:CustomButtonProps) => {
+const CustomButton = ( props : CustomButtonProps ) => {
   return (
     <button
         disabled={false}
