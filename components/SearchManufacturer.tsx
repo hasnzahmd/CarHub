@@ -10,7 +10,7 @@ const SearchManufacturer = (props:SearchManufacturerProps) => {
   const [query, setQuery] = useState('');
 
   const filteredManufacturers = 
-    query === "" ? manufacturers : manufacturers.filter((item) =>(
+    query === "" ? manufacturers : manufacturers.filter((item) => (
       item.toLowerCase()
       .replace(/\s+/g,"")
       .includes(query.toLowerCase().replace(/\s+/g,""))
@@ -43,11 +43,6 @@ const SearchManufacturer = (props:SearchManufacturerProps) => {
             afterLeave={()=> setQuery('')}
           >
             <Combobox.Options>
-              {/* {filteredManufacturers.length === 0 && query !== "" ? (
-                <Combobox.Option value={query} className='search-manufacturer__option'>
-                  Create "{query}"
-                </Combobox.Option>
-              ):( */}
               {filteredManufacturers.map((item)=>(
                 <Combobox.Option
                   key={item}
