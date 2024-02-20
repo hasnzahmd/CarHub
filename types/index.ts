@@ -1,4 +1,3 @@
-import { log } from "console";
 import { MouseEventHandler } from "react";
 
 export interface CustomButtonProps {
